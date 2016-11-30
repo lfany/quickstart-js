@@ -83,6 +83,18 @@ limitations under the License.
 <!-- PASTE FIREBASE INITIALIZATION CODE HERE -->
 <!-- END INITIALIZATION CODE -->
 <!-- ******************************************************** -->
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBxaGHNTVwiqKAK9QTHPk1DqyXcS4xrwso",
+    authDomain: "todo-parse-150404.firebaseapp.com",
+    databaseURL: "https://todo-parse-150404.firebaseio.com",
+    storageBucket: "todo-parse-150404.appspot.com",
+    messagingSenderId: "936388421675"
+  };
+  firebase.initializeApp(config);
+</script>
 <script>
   // [START get_messaging_object]
   // Retrieve Firebase Messaging object.
