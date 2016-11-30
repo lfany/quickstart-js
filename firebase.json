@@ -15,12 +15,14 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
+    "rewrites": [ {
+        "source": "/**",
         "destination": "/hello.html"
-      }
-    ],
+      },
+      {
+        "source": "/app/**",
+        "destination": "/hello.html"
+      } ],
     "redirects": [ {
       "source" : "/foo",
       "destination" : "/bar",
@@ -29,10 +31,6 @@
       "source" : "/firebase/*",
       "destination" : "https://www.ifnot.cc",
       "type" : 302
-    } ],
-    "rewrites": [ {
-      "source": "/app/**",
-      "destination": "/app/index.html"
     } ],
     "headers": [ {
       "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
