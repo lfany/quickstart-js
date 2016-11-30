@@ -4,6 +4,17 @@
   },
   "hosting": {
     "public": ".",
+    "ignore": [
+      ".google",
+      ".gitignore",
+      "CONTRIBUTING.md",
+      "LICENSE",
+      "README.md",
+      "database.rules.json",
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
