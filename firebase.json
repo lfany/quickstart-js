@@ -22,6 +22,10 @@
       {
         "source": "/app/**",
         "destination": "/hello.html"
+      },
+      {
+        "source": "/firebase-messaging-sw.js",
+        "destination": "/messaging/firebase-messaging-sw.js"
       } ],
     "redirects": [ {
       "source" : "/foo",
